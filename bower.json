@@ -1,0 +1,27 @@
+{
+  "name": "make-at-os",
+  "version": "0.0.0",
+  "authors": [
+    "Sanda Golcea <sanda.golcea@gmail.com>"
+  ],
+  "description": "boilerplate",
+  "keywords": [
+    "node",
+    "angular",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.4",
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "make-at-os",
+  "version": "1.0.0",
+  "description": "boiler plate for node",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "boilerplate"
+  ],
+  "author": "Sanda Golcea",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}
