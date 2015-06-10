@@ -7,8 +7,11 @@
     "test": "test"
   },
   "scripts": {
+    "start": "node server.js",
+    "update-webdriver": "webdriver-manager update",
     "test": "karma start test/unit/karma.conf.js",
-    "start": "node server.js"
+    "webdriver": "webdriver-manager start --standalone",
+    "protractor": "protractor test/e2e/conf.js"
   },
   "keywords": [
     "node",
@@ -25,6 +28,7 @@
     "karma-chrome-launcher": "^0.1.12",
     "karma-jasmine": "^0.3.5",
     "karma-phantomjs-launcher": "^0.2.0",
-    "phantomjs": "^1.9.17"
+    "phantomjs": "^1.9.17",
+    "protractor": "^2.1.0"
   }
 }
