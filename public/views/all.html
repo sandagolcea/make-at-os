@@ -1,0 +1,7 @@
+<li ng-repeat="project in projects">
+  <h3 id="projectTitle">{{project.title}}</h3>
+  <div id="projectText">{{project.text}}</div>
+    <ul ng-repeat="image in project.images track by $index">
+      <li id="projectImage"><img ng-src={{image}} /></li>
+    </ul>
+</li>
