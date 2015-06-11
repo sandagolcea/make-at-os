@@ -3,3 +3,25 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
+.navbar {
+  opacity: 0.7;
+}
+
+body {
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin: 20px;
+  padding: 50;
+  background: url("../public/images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+}

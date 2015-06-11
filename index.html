@@ -12,36 +12,17 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body ng-controller="MainController">
-  <h1>Make-At-Os</h1>
-  <li><a href="#/">All</a></li>
-  <li><a href="#/corporate">Corporate</a></li>
-  <li><a href="#/media">Media</a></li>
-  <li><a href="#/entertainment">Entertainment</a></li>
-
-  <div class="container">
-    <div class="row" ng-repeat="project in projects">
-        <div class="col-xs-18 col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <img id="projectImage" ng-src={{project.images[0]}}>
-            <div class="caption">
-              <h4 id="projectTitle">{{project.title}}</h4>
-              <p id="projectText">{{project.text}}</p>
-            </div>
-        </div>
-      </div>
-    </div><!--/row-->
-  </div><!--/container -->
-
-  <!-- <div class="btn-group">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-      Filter <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" role="menu">
-      <li><a href="#">All</a></li>
-      <li><a href="#">corporate</a></li>
-      <li><a href="#">media</a></li>
-      <li><a href="#">entertainment</a></li>
-    </ul>
-  </div> -->
+  <div class="container row">
+    <div class="col-md-8 col-md-offset-2">
+      <nav class="navbar navbar-default">
+        <h1>Make-At-Os</h1>
+        <li><a href="#/">All</a></li>
+        <li><a href="#/corporate">Corporate</a></li>
+        <li><a href="#/media">Media</a></li>
+        <li><a href="#/entertainment">Entertainment</a></li>
+      </nav>
+      <div ng-view></div>
+    </div>
+  </div>
 </body>
 </html>
