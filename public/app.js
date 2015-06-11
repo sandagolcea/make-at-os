@@ -21,8 +21,8 @@ app.config(function($routeProvider) {
 
 app.controller('MainController', function($scope) {
   $scope.projects = [
-    {"id": 1, "title": "Virgin Galactic Launch", "tag": "corporate", "text": "sometext", "images": ["http://i.dailymail.co.uk/i/pix/2015/01/06/2473100D00000578-2898639-Photographer_Andrey_Gudkov_snapped_the_images_on_the_plains_of_t-a-20_1420546215677.jpg", "http://i.dailymail.co.uk/i/pix/2015/01/06/2473100D00000578-2898639-Photographer_Andrey_Gudkov_snapped_the_images_on_the_plains_of_t-a-20_1420546215677.jpg"] },
-    {"id": 2, "title": "Virgin Galactic Launch 2", "tag": "media", "text": "sometext2", "images": ["http://i.dailymail.co.uk/i/pix/2015/01/06/2473100D00000578-2898639-Photographer_Andrey_Gudkov_snapped_the_images_on_the_plains_of_t-a-20_1420546215677.jpg", "http://i.dailymail.co.uk/i/pix/2015/01/06/2473100D00000578-2898639-Photographer_Andrey_Gudkov_snapped_the_images_on_the_plains_of_t-a-20_1420546215677.jpg"] },
-    {"id": 3, "title": "Virgin Galactic Launch 3", "tag": "entertainment", "text": "sometext2", "images": ["http://i.dailymail.co.uk/i/pix/2015/01/06/2473100D00000578-2898639-Photographer_Andrey_Gudkov_snapped_the_images_on_the_plains_of_t-a-20_1420546215677.jpg", "http://i.dailymail.co.uk/i/pix/2015/01/06/2473100D00000578-2898639-Photographer_Andrey_Gudkov_snapped_the_images_on_the_plains_of_t-a-20_1420546215677.jpg"] },
+    {"id": 1, "title": "Virgin Galactic Launch", "tag": "entertainment", "text": "Airline offering suborbital spaceflights with a new version of SpaceShipOne. Provides description of flights, the vehicle and offers bookings starting 2005.", "images": ["/public/images/virgin.jpg"] },
+    {"id": 2, "title": "Tesco", "tag": "corporate", "text": "Tesco PLC is a British multinational grocery and general merchandise retailer headquartered in Cheshunt, Hertfordshire, England, United Kingdom. It is the third large…", "images": ["/public/images/tesco.jpg"]},
+    {"id": 3, "title": "Sony", "tag": "media", "text": "Sony is Sanda's favourite brand", "images": ["/public/images/tesco.jpg"]},
   ];
 });
