@@ -3,7 +3,7 @@ describe('My application', function() {
     browser.get('http://localhost:8000');
   });
 
-  it('has a site title', function() {
+  it('has a site title', function(){
     expect(browser.getTitle()).toEqual('Make-At-Os');
   });
 
@@ -15,7 +15,7 @@ describe('My application', function() {
     expect(element(by.id('projectText')).getText()).toEqual('sometext');
   });
 
-  it('displays project images', function() {
+  it('displays project images', function(){
     expect(browser.isElementPresent(by.id('projectImage'))).toBe(true);
   });
 });
