@@ -30,4 +30,4 @@ node_modules
 
 #OTHER
 .DS_Store
-bower_components
+.bower_components

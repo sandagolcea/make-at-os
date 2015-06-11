@@ -1,0 +1,21 @@
+<!-- <li ng-repeat="project in projects">
+  <h3 id="projectTitle">{{project.title}}</h3>
+  <div id="projectText">{{project.text}}</div>
+    <ul ng-repeat="image in project.images track by $index">
+      <li id="projectImage"><img ng-src={{image}} /></li>
+    </ul>
+</li> -->
+
+<div class="container">
+  <div class="row" ng-repeat="project in projects">
+    <div class="col-xs-18 col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <img id="projectImage" ng-src={{project.images[0]}}>
+        <div class="caption">
+          <h4 id="projectTitle">{{project.title}}</h4>
+          <p id="projectText">{{project.text}}</p>
+        </div>
+      </div>
+    </div>
+  </div><!--/row-->
+</div><!--/container -->
