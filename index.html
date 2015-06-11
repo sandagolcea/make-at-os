@@ -2,7 +2,7 @@
 <html lang="en" ng-app="appName">
 <head>
   <meta charset="UTF-8">
-  <title>Basic application</title>
+  <title>Make-At-Os</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.js"></script>
@@ -10,9 +10,10 @@
   <script src="public/app.js"></script>
 </head>
 <body ng-controller="MainController">
-  <h1>Basic Angular</h1>
-  <div>
+  <h1>Make-At-Os</h1>
+  <li ng-repeat="project in projects">
+    <h3 id="projectTitle">{{project.title}}</h3>
     <div ng-view></div>
-  </div>  
+  </li>
 </body>
 </html>

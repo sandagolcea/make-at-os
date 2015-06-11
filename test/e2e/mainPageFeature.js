@@ -1,8 +1,15 @@
 describe('My application', function() {
 
-  it('has a title', function() {
+  beforeEach(function(){
     browser.get('http://localhost:8000');
-    expect(browser.getTitle()).toEqual('Basic application');
+  });
+
+  it('has a site title', function() {
+    expect(browser.getTitle()).toEqual('Make-At-Os');
+  });
+
+  it('displays project titles', function(){
+    expect(element(by.id('projectTitle')).getText()).toEqual('Virgin Galactic Launch');
   });
 
 });
