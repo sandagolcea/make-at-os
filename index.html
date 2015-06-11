@@ -9,18 +9,21 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="public/app.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body ng-controller="MainController">
   <h1>Make-At-Os</h1>
   <div class="container">
     <div class="row" ng-repeat="project in projects">
-      <div class="col-xs-18 col-sm-6 col-md-3">
-        <div class="thumbnail">
-          <img id="projectImage" ng-src={{project.images[0]}}>
-          <div class="caption">
-            <h4 id="projectTitle">{{project.title}}</h4>
-            <p id="projectText">{{project.text}}</p>
-          </div>
+        <div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="card">
+            <div class="thumbnail">
+              <img id="projectImage" ng-src={{project.images[0]}}>
+              <div class="caption">
+                <h4 id="projectTitle">{{project.title}}</h4>
+                <p id="projectText">{{project.text}}</p>
+              </div>
+            </div>
         </div>
       </div>
     </div><!--/row-->
