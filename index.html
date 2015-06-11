@@ -14,11 +14,12 @@
   <li ng-repeat="project in projects">
     <h3 id="projectTitle">{{project.title}}</h3>
     <div id="projectText">{{project.text}}</div>
-
-<!--     <li ng-repeat="image in projects"> -->
-      <img src="http://i.dailymail.co.uk/i/pix/2015/01/06/2473100D00000578-2898639-Photographer_Andrey_Gudkov_snapped_the_images_on_the_plains_of_t-a-20_1420546215677.jpg"></img>
-<!--     </li> -->
-    <div ng-view></div>
+    <!-- <ul> -->
+      <ul ng-repeat="image in project.images track by $index">
+        <li id="projectImage"><img ng-src={{image}} /></li>
+      </ul>
+      <div ng-view></div>
+    <!-- </ul> -->
   </li>
 </body>
 </html>

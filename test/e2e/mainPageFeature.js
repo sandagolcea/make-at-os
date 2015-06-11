@@ -14,4 +14,8 @@ describe('My application', function() {
   it('displays project descriptions', function(){
     expect(element(by.id('projectText')).getText()).toEqual('sometext');
   });
+
+  it('displays project images', function() {
+    expect(browser.isElementPresent(by.id('projectImage'))).toBe(true);
+  });
 });
